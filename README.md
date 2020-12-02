@@ -18,7 +18,7 @@ OOP CLASS
 int main(){
   int a,b;
   cin>>a>>b;
-  try(b){
+  try{
     if(b!=0){
       cout<<a/b<<endl;
     }else{
@@ -29,3 +29,12 @@ int main(){
     cout<<"b cannot be "<<0<<endl;
   }
 }
+```
+---
+  *All excpetions can be caught using "Catch all exception"
+    *Syntax
+      * ```cpp
+        catch(...){
+          cout<<"Caught an exception"<<endl;
+        }
+        ```
