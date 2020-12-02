@@ -38,3 +38,33 @@ int main(){
     cout<<"Caught an exception"<<endl;
     }
     ```
+  * Type of exception cannot be specified using catch all.
+* Rethrowing Exception
+  ```cpp
+  void divide(double x,double y){
+    try{
+      if(y==0){
+        throw y;
+      }else{
+        cout<<"DIVISION"<<endl;
+      }
+    }
+    catch(double){
+      cout<<"Excpetion inside function";
+      throw;
+    }
+  }
+  int main(){
+    try{
+      divide(10.5,2.0);
+      divide(20.0,0.0);
+    }
+    catch(double){
+      cout<<"Exception inside main"<<endl;
+    }
+  }
+  //Output
+  // Division 5.25
+  // Exception inside function
+  // Exception inside main function
+  ```
