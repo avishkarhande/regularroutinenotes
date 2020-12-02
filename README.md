@@ -31,10 +31,10 @@ int main(){
 }
 ```
 ---
-  *All excpetions can be caught using "Catch all exception"
-    *Syntax
-      ```cpp
-        catch(...){
-          cout<<"Caught an exception"<<endl;
-        }
-        ```
+*All excpetions can be caught using "Catch all exception"
+  *Syntax
+```cpp
+catch(...){
+cout<<"Caught an exception"<<endl;
+}
+```
