@@ -89,4 +89,23 @@ int main(){
   //Inside Function 0;
   // Inside function 1;
   // Caught an int exception 1
-```
+  ```
+* User Defined Exception
+    ```cpp
+    #include<exception>
+    class myexception:public exception{
+      const char* what() const throw(){
+        return "My Exception happened";
+      } // always use const before return type
+    } myex;
+    int main(){
+      try{
+        throw myex;
+      }
+      catch(exception& e){
+        cout<<e.what()<<endl;
+      }
+    }
+    // Output
+    // My exception happened
+    ```
