@@ -68,8 +68,8 @@ int main(){
   // Exception inside function
   // Exception inside main function
   ```
- * Exception thrown from functions
-  ```cpp
+* Exception thrown from functions
+   * ```cpp
   void test(int x){
     cout<<"Inside Func "<<x<<endl;
   }
@@ -89,3 +89,4 @@ int main(){
   //Inside Function 0;
   // Inside function 1;
   // Caught an int exception 1
+  ```
