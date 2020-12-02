@@ -1,5 +1,5 @@
-# 30-DAYS-OF-CP-AND-DSA 
-DAY 1
+# Regular Routine Notes (DSA,CLASS,CP)
+DAY 1 (2/12/2020)
 ---
 DSA
 ---
