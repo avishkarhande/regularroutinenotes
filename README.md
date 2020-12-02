@@ -10,3 +10,20 @@ DSA
 |3.Traversing can be done in any order from any element |3. Traversal Possible only through head|
 |4.Inserting an element takes O(n) in worst case|4.Inserting element takes O(1) but needs traversing so O(n)overall|
 |5. Point 4 applicable for deleting as well|5. Point 4 for deleting as well|
+---
+OOP CLASS
+```cpp
+int main(){
+  int a,b;
+  cin>>a>>b;
+  try(b){
+    if(b!=0){
+      cout<<a/b<<endl;
+    }else{
+      throw(b);
+    }
+  }
+  catch(int b){
+    cout<<"b cannot be "<<0<<endl;
+  }
+}
