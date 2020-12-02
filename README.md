@@ -12,6 +12,8 @@ DSA
 |5. Point 4 applicable for deleting as well|5. Point 4 for deleting as well|
 ---
 OOP CLASS
+---
+  Exception Handling
 ```cpp
 int main(){
   int a,b;
