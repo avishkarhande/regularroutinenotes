@@ -109,3 +109,34 @@ int main(){
     // Output
     // My exception happened
     ```
+DAY 2
+---
+OOP
+---
+* Error handling Function
+   ```cpp
+   #include<fstream>
+   #using<iostream>
+   using namespace std;
+   int main(){
+   // method 1
+    ifstream fin;
+    fin.open("sam10.txt");
+    if(!fin){
+      cout<<"File can not be opened"<<endl;
+      return 0;
+    }
+    cout<<"file is opened"<<endl;
+    //method 2
+    fin.open("sam10.txt");
+    if(fin.fail()){
+      cout<<"File doesn't exist"<<endl;
+      return 0;
+    }
+    cout<<"file is opened";
+    return 0;
+   }
+   ```
+* CASE STUDY
+  * - [ ] Study Features used for MS office, I.E and VS COde that are written in visual C++ 
+
