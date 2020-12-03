@@ -139,4 +139,37 @@ OOP
    ```
 * CASE STUDY
   * - [ ] Study Features used for MS office, I.E and VS COde that are written in visual C++ 
-
+---
+* Exception handling (Contd.)
+ * If Exception is not found then the program runs without causing any interference.
+ * The code that handles the error is called exception handler or catch block.
+ * Errors generated in try block are catched in catch block.
+    ```cpp
+    try {
+      // code that operates on object that might cause an exception
+      throw e:
+    }
+    catch(E e){
+      //handle exception
+    }
+    ```
+ * ```cpp
+ int main(){
+  int x = -1;
+  try{
+    cout<<"Inside Try"<<endl;
+    if(x<0){
+      throw x;
+      cout<<"After throw"<<endl;
+    }
+  }
+  catch(int x){
+    cout<<"Exception Caught"<<endl;
+  }
+  cout<<"After Catch"<<endl;
+  return 0;
+ }
+ // Before Try
+ // Inside try
+ //Exception Caught
+ ```
